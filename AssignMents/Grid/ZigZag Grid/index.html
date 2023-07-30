@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZigZag Grid</title>
+    <style>
+        .container{
+            height: 450px;
+            width: 700px;
+            margin: auto;
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .container>div{
+            background-color: teal;
+            border-radius: 10px;
+        }
+        #one{
+            grid-area: 1/1/2/2;
+        }
+        #two{
+            grid-area: 1/2/2/5;
+        }
+        #three{
+            grid-area: 2/1/3/4;
+        }
+        #nine{
+            grid-area: 3/3/4/6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+        <div id="five"></div>
+        <div id="six"></div>
+        <div id="seven"></div>
+        <div id="eight"></div>
+        <div id="nine"></div>
+    </div>
+</body>
+</html>

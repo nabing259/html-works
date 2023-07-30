@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Layout</title>
+    <style>
+        #first{
+            height: 190px;
+            width: 40%;
+            margin: auto;
+            text-align: center;
+        }
+        p{
+            color: #969696;
+        }
+        #second{
+            height: 350px;
+            width: 60%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        #second>div{
+            text-align: center;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+        }
+        #second>div>div{
+            line-height: 5px;
+            padding: 0 0 10px 0;
+        }
+        div>div>div>p{
+            font-style: italic;
+        }
+        h1{
+            font-size: 39px;
+        }
+        h3{
+            padding-bottom: 10px;
+            color: #182F4A;
+        }
+        button{
+            margin-top: 12px;
+            height: 45px;
+            width: 150px;
+            border: 1.5px solid #007AFF;
+            background-color: white;
+            border-radius: 10px;
+            color: #007AFF;
+            font-weight: bold;
+        }
+        button:hover{
+            background-color: #007AFF;
+            color: white;
+        }
+        /* medium */
+        @media only screen and (min-width: 421px) and (max-width: 780px){
+            #first{
+            width: 60%;
+        }
+            #second{
+                margin:auto;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+            }
+        }
+        /* small screens */
+      @media only screen and (min-width: 70px) and (max-width: 420px){
+        #first{
+            width: 60%;
+        }
+        #second{
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: auto;
+                margin-top: 170px;
+            }
+      }
+    </style>
+</head>
+<body>
+    <div id="first">
+        <h1>Choose a plan that right for your Business</h1>
+        <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website are really like!</p>
+    </div>
+    <div id="second">
+        <div>
+            <h3>Starter Plan</h3>
+            <div>
+                <h1 style="color: #09AB78;">Free</h1>
+                <p>Per Month</p>
+            </div>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website</p>
+            <button>Start Now</button>
+        </div>
+        <div>
+            <h3>Business Plan</h3>
+            <div>
+                <h1 style="color: #F1793B;">$39.00</h1>
+                <p>Per Month</p>
+            </div>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website</p>
+            <button>Start Now</button>
+        </div>
+        <div>
+            <h3>Premium Plan</h3>
+            <div>
+                <h1 style="color:#4395F2;">$59.00</h1>
+                <p>Per Month</p>
+            </div>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website</p>
+            <button>Start Now</button></div>
+    </div>
+</body>
+</html>
